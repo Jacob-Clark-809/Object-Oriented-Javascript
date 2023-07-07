@@ -1,0 +1,19 @@
+let turk = {
+  firstName: 'Christopher',
+  lastName: 'Turk',
+  occupation: 'Surgeon',
+  getDescription() {
+    return this.firstName + ' ' + this.lastName + ' is a ' + this.occupation + '.';
+  }
+};
+
+function logReturnVal(func, context) {
+  let returnVal = func.apply(context);
+  console.log(returnVal);
+}
+
+logReturnVal(turk.getDescription, turk);
+
+let getTurkDescription = turk.getDescription.bind(turk);
+
+getTurkDescription();

@@ -1,6 +1,6 @@
 ## Object Oriented JavaScript
 
-Small exercises exploring OOP in JavaScript.
+Exercises exploring OOP in JavaScript.
 
 Topics include:
 - object factories
